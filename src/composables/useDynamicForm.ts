@@ -208,7 +208,8 @@ export function useDynamicForm(
     const changes = diff(cache, deepClone(fields))
     Object.entries(changes).forEach(([key, value]) => {
       const ctrl = findControlByName(key)
-      if (ctrl !== null && ctrl !== undefined && ctrl) {
+      if (ctrl === null && ctrl === undefined) return;
+      if (ctrl) {
         Object.entries(value).forEach(([change, newValue]) => {
           if (change === 'options' || change === 'validations') {
             Object.entries(newValue).forEach(([optKey, optValue]) => {
