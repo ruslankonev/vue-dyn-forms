@@ -123,6 +123,7 @@ export type CheckboxInput = InputBase & {
 };
 
 export type CustomInput = InputBase & {
+  id: string;
   type: FieldTypes.CUSTOM;
   value: boolean | string | number;
   optionValue: string;

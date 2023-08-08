@@ -23,9 +23,9 @@
           class="custom-form-wrapper"
         >
           <slot
-            v-if="props.control.name === slot"
+            v-if="props.control.id === slot"
             :name="slot"
-            :control="normalizedControls[slot]"
+            :control="normalizedControls[props.control.name]"
             :onChange="props.onChange"
             :onBlur="props.onBlur"
           ></slot>

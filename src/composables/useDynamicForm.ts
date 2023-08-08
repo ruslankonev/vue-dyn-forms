@@ -142,18 +142,18 @@ export function useDynamicForm(
   function mapControls(empty = false) {
     const controlArray =
       Object.entries(form?.fields).map(([key, field]: [string, InputType]) =>
-        empty
-          ? FieldControl({
-              ...field,
-              name: key,
-              value: field.type === FieldTypes.CHECKBOX ? false : null,
-            })
-          : FieldControl({
-              ...field,
-              name: key,
-            }),
+      empty
+      ? FieldControl({
+        ...field,
+        name: key,
+        value: field.type === FieldTypes.CHECKBOX ? false : null,
+      })
+      : FieldControl({
+        ...field,
+        name: key,
+      }),
       ) || []
-    if (form.fieldOrder) {
+      if (form.fieldOrder) {
       controls.value = controlArray.sort(
         (a: FormControl<InputType>, b: FormControl<InputType>) =>
           form.fieldOrder.indexOf(a.name) - form.fieldOrder.indexOf(b.name),

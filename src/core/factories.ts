@@ -161,6 +161,7 @@ export const SelectField = ({
 });
 
 export const CustomField = ({
+  id,
   options = [],
   value,
   optionValue = 'value',
@@ -168,6 +169,7 @@ export const CustomField = ({
   ...rest
 }: Partial<CustomInput>): CustomInput => ({
   ...FieldBase(rest),
+  id,
   value,
   options,
   optionValue,
