@@ -1,8 +1,8 @@
 {
   "name": "@mathmore0000/vue-dynamic-forms",
-  "version": "1.1.2",
-  "description": "Easy way to dynamically create reactive forms in vue based on varying business object model",
-  "author": "Alvaro Saburido <alvaro.saburido@gmail.com>",
+  "version": "1.1.4",
+  "description": "Forked version of vue-dynamic-forms with a lot of improvements and fixes",
+  "author": "Matheus Moreira",
   "publishConfig": {
     "access": "public"
   },

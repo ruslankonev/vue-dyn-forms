@@ -125,6 +125,9 @@ export type CheckboxInput = InputBase & {
 export type CustomInput = InputBase & {
   type: FieldTypes.CUSTOM;
   value: boolean | string | number;
+  optionValue: string;
+  optionLabel: string;
+  options?: { label: string; value: string; disabled?: boolean }[];
 };
 
 export type EmailInput = InputBase & {
