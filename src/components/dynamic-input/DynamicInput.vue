@@ -71,7 +71,6 @@ export default defineComponent({
     const attributes = computed(() => {
       return {
         control: props?.control,
-
         onChange: valueChange,
         onBlur: (e: InputEvent) => emit('blur', e),
         onFocus: (e: InputEvent) => emit('focus', e),

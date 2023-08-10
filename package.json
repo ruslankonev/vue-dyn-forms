@@ -1,6 +1,6 @@
 {
   "name": "@mathmore0000/vue-dynamic-forms",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "Forked version of vue-dynamic-forms with a lot of improvements and fixes",
   "author": "Matheus Moreira",
   "publishConfig": {
